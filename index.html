@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Final 2</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap"
+    />
   </head>
   <body>
     <div class="contenedor">
@@ -25,6 +29,7 @@
                 <p class="label">Nombre Tarjeta</p>
                 <p class="nombre">XXXX XXXX</p>
               </div>
+
               <div class="grupo" id="expiracion">
                 <p class="label">Expiración</p>
                 <p class="expiracion">
@@ -40,7 +45,7 @@
           <div class="datos">
             <div class="grupo" id="firma">
               <p class="label">Firma</p>
-              <div class="firma"><p></p></div>
+              <div class="firma"><p>Lisette</p></div>
             </div>
             <div class="grupo" id="ccv">
               <p class="label">CCV</p>
@@ -49,19 +54,53 @@
           </div>
           <p class="leyenda">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-            accusamus nobis quibusdam amet, culpa repudiandae aperiam atque
-            dolores distinctio? Ad eos sed dolore vitae in maxime sit ullam
-            voluptate veritatis?
+            accusamus nobis quibusdam amet.
           </p>
           <a href="#" class="link-banco">www.tubanco.com</a>
         </div>
       </section>
+
       <div class="contenedor-btn">
         <button class="btn-abrir-formulario" id="btn-abrir-formulario">
           <i class="fas fa-plus"></i>
         </button>
       </div>
+
+      <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+        <div class="grupo">
+          <label for="inputNumero">Número Tarjeta</label>
+          <input
+            type="text"
+            id="inputNumero"
+            maxlength="19"
+            autocomplete="off"
+          />
+        </div>
+        <div class="grupo">
+          <label for="inputNombre">Nombre</label>
+          <input
+            type="text"
+            id="inputNombre"
+            maxlength="19"
+            autocomplete="off"
+          />
+        </div>
+        <div class="flexbox">
+          <div class="grupo expira">
+            <label for="selectMes">Expiración</label>
+            <div class="flexbox">
+              <div class="grupo-select">
+                <select name="mes" id="selectMes">
+                  <option disabled selected>Mes</option>
+                </select>
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
+
     <script
       src="https://kit.fontawesome.com/2c36e9b7b1.js"
       crossorigin="anonymous"
